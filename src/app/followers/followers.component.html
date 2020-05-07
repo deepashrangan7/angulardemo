@@ -1,0 +1,13 @@
+<div class="container">
+
+    <h2> Github Followers</h2>
+    <!-- Left-aligned media object -->
+    <div class="media" *ngFor="let f of followers">
+        <div class="media-left">
+            <img src="{{f.avatar_url}}" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{f.login}}</h4>
+            <a href="{{f.html_url}}" target="_blank">{{f.html_url}}</a>
+        </div>
+    </div>
