@@ -12,7 +12,7 @@ export class Followerservice {
     getAllFollwers() {
 
 
-        return this.http.get('http://api.github.com/users/mosh-hamedani/followers');
+        return this.http.get('https://api.github.com/users/mosh-hamedani/followers');
     }
 
 }
